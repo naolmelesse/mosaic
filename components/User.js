@@ -21,14 +21,23 @@ export default function User(){
                     <img src={user.picture} alt={user.name} />
                     <p>{user.name}</p>
             </Profile>
-            <p style={{fontSize: "0.8rem"}}><Link href="/api/auth/logout">Log out</Link></p>
+            <Link style={{fontSize: "1rem",}} href="/api/auth/logout"><Logout>Log out</Logout></Link>
         </ProfileContainer>
     )
 }
 const ProfileContainer = styled.div`
     display: flex;
     flex-direction: row !important;
+    align-items: end !important;
     gap: 2rem;
+`;
+
+const Logout = styled.p`
+transition: 0.3s;
+
+&:hover {
+    color: #aaa;
+}
 `;
 
 const Profile = styled.div`

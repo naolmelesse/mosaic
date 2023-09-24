@@ -9,7 +9,7 @@ export const ProductStyle = styled.div`
     // padding: 1rem;
     color: var(--secondary);
     img{
-        width: 400px;
+        width: 100%;
     }
     h2{
         padding: 0.3rem 0rem;

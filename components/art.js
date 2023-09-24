@@ -10,9 +10,13 @@ export default function Art({ art }){
                 <img src={image.data.attributes.formats.small.url} alt="" />
             </div>
             </Link>
-            <p>{name}</p>
-            <p>Artist: {artist}</p>
-            <p>${price}</p>
+            <div style={{display: "flex", justifyContent: "space-between", padding: "0.5rem 0 0 0"}}>
+                <div >
+                    <p>{name}</p>
+                    <p>Artist: {artist}</p>
+                </div>
+                <p>Price: ${price}</p>
+            </div>
         </ProductStyle>
     )
 }

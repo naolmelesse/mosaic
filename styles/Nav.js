@@ -46,6 +46,7 @@ export const NavLink = styled.li`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: 0.5s;
   &:hover {
     text-decoration: underline;
     text-underline-offset: 0.5rem;

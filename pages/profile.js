@@ -21,7 +21,7 @@ export default function Profile({ user, orders }){
 
     return(
        user && ( 
-        <div>
+        <Container>
         <h2>{user.name}</h2>
         <p>{user.email}</p>
         <div>
@@ -35,17 +35,22 @@ export default function Profile({ user, orders }){
           ))}
         </div>
         <button onClick={() => route.push("/api/auth/logout")}>Log out</button>
-      </div>
+      </Container>
         )
     )
 }
-
+const Container = styled.div`
+  h2,p,h1{
+    color: #fff;
+  }
+`;
 const Order = styled.div`
-  background: white;
+  background: #D8D9DA;
+  color: (--primary);
   margin: 2rem 0rem;
   padding: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   h1 {
     font-size: 1rem;
     color: var(--primary);
@@ -53,7 +58,7 @@ const Order = styled.div`
   }
   h2 {
     font-size: 1rem;
-    color: var(--secondary);
+    color: var(--primary);
   }
 `;
 

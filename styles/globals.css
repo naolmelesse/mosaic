@@ -12,6 +12,6 @@ body {
   --primary: #61677A;
   --secondary: #FFF6E0;
   font-family: 'Montserrat', sans-serif;
-  
+  user-select: none;
 }
 
