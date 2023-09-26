@@ -14,7 +14,7 @@ export default function Home() {
   if(fetching) return (
           <>
           <LandingPage/>
-          <p align="center">Loading...</p>
+          <p align="center" style={{padding: "20% 0"}}>Loading...</p>
           <TestimonialSlider/>
           <FAQ/>
           </>
@@ -22,7 +22,7 @@ export default function Home() {
   if(error) return (
           <>
           <LandingPage/>
-          <p align="center">Error occurred {error.message}</p>
+          <p align="center" style={{padding: "20% 0"}}>Error occurred {error.message}</p>
           <TestimonialSlider/>
           <FAQ/>
           </>
