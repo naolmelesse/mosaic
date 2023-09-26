@@ -11,8 +11,16 @@ export default function Home() {
   const [result] = useQuery({query: ART_QUERY});
   const{data, fetching, error} = result;
 
-  if(fetching) return <p>Loading...</p>;
-  if(error) return <p>Error occurred {error.message}</p>;
+  if(fetching) return (
+          <LandingPage/>
+          <p align="center">Loading...</p>
+          <TestimonialSlider/>
+          <FAQ/>);
+  if(error) return (
+          <LandingPage/>
+          <p align="center">Error occurred {error.message}</p>
+          <TestimonialSlider/>
+          <FAQ/>);
 
   const arts = data.arts.data;
 
