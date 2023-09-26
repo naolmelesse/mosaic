@@ -17,7 +17,7 @@ export default function Nav(){
                 <Link href="/"><Logo>MOSAIC</Logo></Link>
                 <NavLinks>
                     <Link href="/"><NavLink><BiHomeAlt2/> Home</NavLink></Link>
-                    <Link href="#"><NavLink><IoGridOutline/> Gallery</NavLink></Link>
+                    <Link href="#gallery"><NavLink><IoGridOutline/> Gallery</NavLink></Link>
                     <Link href=""><NavLink><BsBrush/> Studio</NavLink></Link>
                     <Link href="#"><NavLink><RiCustomerServiceLine/> Contact</NavLink></Link>
                 </NavLinks>

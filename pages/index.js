@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <main>
         <LandingPage/>
-        <Gallery>
+        <Gallery id="gallery">
         {
           arts.map((art) => (<Art key={art.attributes.slug} art={art}/>))
         }
