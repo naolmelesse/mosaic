@@ -56,7 +56,6 @@ export default function Footer(){
       <AdditionalLinks>
         <AdditionalLink href="#">Terms of Service</AdditionalLink>
         <AdditionalLink href="#">Privacy Policy</AdditionalLink>
-        {/* Add more additional links as needed */}
       </AdditionalLinks>
       <CopyrightText>&copy; 2023 MOSAIC. All rights reserved.</CopyrightText>
     </FooterContainer>

@@ -12,15 +12,21 @@ export default function Home() {
   const{data, fetching, error} = result;
 
   if(fetching) return (
+          <>
           <LandingPage/>
           <p align="center">Loading...</p>
           <TestimonialSlider/>
-          <FAQ/>);
+          <FAQ/>
+          </>
+          );
   if(error) return (
+          <>
           <LandingPage/>
           <p align="center">Error occurred {error.message}</p>
           <TestimonialSlider/>
-          <FAQ/>);
+          <FAQ/>
+          </>
+          );
 
   const arts = data.arts.data;
 
