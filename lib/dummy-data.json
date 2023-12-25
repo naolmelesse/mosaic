@@ -1,7 +1,7 @@
 [
     {
     "name": "Beautiful Cubism Graffiti",
-    "image": "../public/arts/beautiful-cubism-graffiti.jpg",
+    "image": "/public/arts/beautiful-cubism-graffiti.jpg",
     "price": "12764",
     "slug": "beautiful-cubism-graffiti",
     "description": "A graffiti drawn by a local artist in Cape Town",
@@ -9,7 +9,7 @@
 },
 {
     "name": "People Abstract",
-    "image": "/../public/arts/people-abstract.jpg",
+    "image": "/arts/people-abstract.jpg",
     "price": "23718",
     "slug": "people-abstract",
     "description": "People abstract painting by Kamal",
