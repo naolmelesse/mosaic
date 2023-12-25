@@ -26,7 +26,7 @@ export default function ProductDetails() {
   const notify = (name) => {
     toast.success(`${name} added to cart.`, { duration: 1500, icon: "😉" });
   };
-  console.log(query.slug);
+
   return (
     <DetailsStyle>
       {arts
