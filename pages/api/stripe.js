@@ -26,7 +26,7 @@ export default async function handler(req, res) {
                 currency: "etb",
                 product_data: {
                   name: item.name,
-                  images: [item.image.data.attributes.formats.thumbnail.url],
+                  images: [item.image],
                 },
                 unit_amount: item.price,
               },
@@ -57,7 +57,7 @@ export default async function handler(req, res) {
                 currency: "etb",
                 product_data: {
                   name: item.name,
-                  images: [item.image.data.attributes.formats.thumbnail.url],
+                  images: [item.image],
                 },
                 unit_amount: item.price * 100,
               },
@@ -71,6 +71,7 @@ export default async function handler(req, res) {
           success_url: `${req.headers.origin}/success?&session_id={CHECKOUT_SESSION_ID}`,
           cancel_url: `${req.headers.origin}/canceled`,
         });
+        console.log(session);
         res.status(200).json(session);
       }
     } catch (error) {
