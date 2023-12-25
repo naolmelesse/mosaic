@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const { motion } = require('framer-motion');
+const { motion } = require("framer-motion");
 
 export const CartWrapper = styled(motion.div)`
   position: fixed;
@@ -11,9 +11,9 @@ export const CartWrapper = styled(motion.div)`
   z-index: 100;
   display: flex;
   justify-content: flex-end;
-  `;
-  
-  export const CartStyle = styled(motion.div)`
+`;
+
+export const CartStyle = styled(motion.div)`
   background: var(--primary);
   width: 30%;
   padding: 1rem 3rem;
@@ -63,11 +63,11 @@ export const EmptyStyle = styled(motion.div)`
 `;
 
 export const Checkout = styled(motion.div)`
-  h3{
+  h3 {
     font-size: 1.2rem;
   }
   button {
-    background: #D8D9DA;
+    background: #d8d9da;
     padding: 0.5rem 1rem;
     width: 100%;
     // color: #222;
@@ -80,10 +80,10 @@ export const Checkout = styled(motion.div)`
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  
+
     &:hover {
-        color: #999;
-      background-color: #D8D9DA;
+      color: #999;
+      background-color: #d8d9da;
     }
   }
 `;

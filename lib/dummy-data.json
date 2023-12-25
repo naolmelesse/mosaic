@@ -1,0 +1,66 @@
+[
+    {
+    "name": "Beautiful Cubism Graffiti",
+    "image": "/../public/arts/beautiful-cubism-graffiti.jpg",
+    "price": "12764",
+    "slug": "beautiful-cubism-graffiti",
+    "description": "A graffiti drawn by a local artist in Cape Town",
+    "artist": "Unknown"
+},
+{
+    "name": "People Abstract",
+    "image": "/../public/arts/people-abstract.jpg",
+    "price": "23718",
+    "slug": "people-abstract",
+    "description": "People abstract painting by Kamal",
+    "artist": "Kamal"
+},
+{
+    "name": "Black and White Greek Statue",
+    "image": "/../public/arts/bw-greek-statue-image-torn-paper-style-remixed-media.jpg",
+    "price": "37899",
+    "slug": "greek-statue",
+    "description": "Black and White greek statue painting torn paper style",
+    "artist": "Da Vinci"
+    },
+{
+    "name": "Still Life",
+    "image": "/../public/arts/paint-still-life.jpg",
+    "price": "54120",
+    "slug": "still-life",
+    "description": "A painting by Pablo",
+    "artist": "Pablo Escobar"
+    },
+{
+    "name": "Rhinoceros",
+    "image": "/../public/arts/rhinoceros-is-depicted-low-poly-style.jpg",
+    "price": "19877",
+    "slug": "rhinoceros-depicted",
+    "description": "Rhinoceros is depicted low poly style",
+    "artist": "Ugayew"
+    },
+{
+    "name": "Lost Soul",
+    "image": "/../public/arts/pexels-anni-roenkae-2860804.jpg",
+    "price": "102454",
+    "slug": "lost-soul",
+    "description": "Anni Roenkae's latest work",
+    "artist": "Anni Roenkae"
+    },
+{
+    "name": "World Environment Day",
+    "image": "/../public/arts/world-environment-earth-day-concept-generative-ai.jpg",
+    "price": "47699",
+    "slug": "world-environment-earth-day",
+    "description": "World environment earth day concept generative AI",
+    "artist": "AI"
+    },
+{
+    "name": "Feelings",
+    "image": "/../public/arts/pexels-steve-johnson-1672850.jpg",
+    "price": "32090",
+    "slug": "feelings",
+    "description": "Mixed feelings",
+    "artist": "Steve Johnson"
+    }
+]

@@ -1,36 +1,13 @@
-import Head from 'next/head';
-import { useQuery } from 'urql';
-import { ART_QUERY } from '@/lib/query';
-import Art from '@/components/art';
-import { Gallery } from '@/styles/Gallery';
-import LandingPage from '@/components/landing';
-import FAQ from '@/components/faq';
-import TestimonialSlider from '@/components/testimonial';
+import Head from "next/head";
+
+import arts from "../lib/dummy-data.json";
+import Art from "@/components/art";
+import FAQ from "@/components/faq";
+import { Gallery } from "@/styles/Gallery";
+import LandingPage from "@/components/landing";
+import TestimonialSlider from "@/components/testimonial";
 
 export default function Home() {
-  const [result] = useQuery({query: ART_QUERY});
-  const{data, fetching, error} = result;
-
-  if(fetching) return (
-          <>
-          <LandingPage/>
-          <p align="center" style={{padding: "20% 0"}}>Loading...</p>
-          <TestimonialSlider/>
-          <FAQ/>
-          </>
-          );
-  if(error) return (
-          <>
-          <LandingPage/>
-          <p align="center" style={{padding: "20% 0"}}>Error occurred {error.message}</p>
-          <TestimonialSlider/>
-          <FAQ/>
-          </>
-          );
-
-  const arts = data.arts.data;
-
-
   return (
     <>
       <Head>
@@ -40,15 +17,15 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <main>
-        <LandingPage/>
+        <LandingPage />
         <Gallery id="gallery">
-        {
-          arts.map((art) => (<Art key={art.attributes.slug} art={art}/>))
-        }
+          {arts.map((art) => (
+            <Art key={art.slug} art={art} />
+          ))}
         </Gallery>
-        <TestimonialSlider/>
-        <FAQ/>
+        <TestimonialSlider />
+        <FAQ />
       </main>
     </>
-  )
+  );
 }
